@@ -1,0 +1,17 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <Company>Belly</Company>
+    <Authors>Michael Ren</Authors>
+    <ProjectName>Algorithm</ProjectName>
+    <AssemblyName>$(ProjectName).$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(ProjectName).$(MSBuildProjectName)</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <ProductVersion>1.0.0.0</ProductVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
