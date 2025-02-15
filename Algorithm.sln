@@ -3,18 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16397247-461E-4392-A6F7-77C5FB66C746}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NowCoder", "src\nowcoder\NowCoder.csproj", "{27E7F3EB-6A74-4CF5-9709-373876896A06}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "src\leetcode\LeetCode.csproj", "{85538140-2406-4D03-9850-9C4CFF35F67C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3659072-8D60-4A9A-87DA-98E02B7EC46F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeTest", "test\leetcodetest\LeetCodeTest.csproj", "{003882BD-0CC5-4953-AA2E-101C35D4870F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NowCoderTest", "test\nowcodertest\NowCoderTest.csproj", "{80D50328-6E13-4002-AB1E-EE2E9066A522}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,27 +12,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27E7F3EB-6A74-4CF5-9709-373876896A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27E7F3EB-6A74-4CF5-9709-373876896A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27E7F3EB-6A74-4CF5-9709-373876896A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27E7F3EB-6A74-4CF5-9709-373876896A06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85538140-2406-4D03-9850-9C4CFF35F67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85538140-2406-4D03-9850-9C4CFF35F67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85538140-2406-4D03-9850-9C4CFF35F67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85538140-2406-4D03-9850-9C4CFF35F67C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{003882BD-0CC5-4953-AA2E-101C35D4870F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{003882BD-0CC5-4953-AA2E-101C35D4870F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{003882BD-0CC5-4953-AA2E-101C35D4870F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{003882BD-0CC5-4953-AA2E-101C35D4870F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80D50328-6E13-4002-AB1E-EE2E9066A522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80D50328-6E13-4002-AB1E-EE2E9066A522}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80D50328-6E13-4002-AB1E-EE2E9066A522}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80D50328-6E13-4002-AB1E-EE2E9066A522}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{27E7F3EB-6A74-4CF5-9709-373876896A06} = {16397247-461E-4392-A6F7-77C5FB66C746}
-		{85538140-2406-4D03-9850-9C4CFF35F67C} = {16397247-461E-4392-A6F7-77C5FB66C746}
-		{003882BD-0CC5-4953-AA2E-101C35D4870F} = {D3659072-8D60-4A9A-87DA-98E02B7EC46F}
-		{80D50328-6E13-4002-AB1E-EE2E9066A522} = {D3659072-8D60-4A9A-87DA-98E02B7EC46F}
 	EndGlobalSection
 EndGlobal
