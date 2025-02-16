@@ -6,8 +6,8 @@ public class LeetCode34Test
     public void SearchRange_ValidInput_ReturnRange()
     {
         //Arrange
-        int[] nums1 = { 5, 7, 7, 8, 8, 10 };
-        int[] nums2 = Array.Empty<int>();
+        int[] nums1 = [5, 7, 7, 8, 8, 10];
+        int[] nums2 = [];
         int target1 = 8;
         int target2 = 6;
 

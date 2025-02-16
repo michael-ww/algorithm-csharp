@@ -6,7 +6,7 @@ public class LeetCode33Test
     public void Search_ValidInupt_ReturnIndex()
     {
         // Given
-        int[] nums = { 4, 5, 6, 7, 0, 1, 2 };
+        int[] nums = [4, 5, 6, 7, 0, 1, 2];
 
         // When
         LeetCode33 leetCode33 = new();

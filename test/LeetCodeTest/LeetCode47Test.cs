@@ -13,8 +13,8 @@ public class LeetCode47Test
 
         // Then
         Assert.Equal(3, answer.Count);
-        Assert.Contains(new List<int>() { 1, 1, 2 }, answer);
-        Assert.Contains(new List<int>() { 1, 2, 1 }, answer);
-        Assert.Contains(new List<int>() { 2, 1, 1 }, answer);
+        Assert.Contains([1, 1, 2], answer);
+        Assert.Contains([1, 2, 1], answer);
+        Assert.Contains([2, 1, 1], answer);
     }
 }
