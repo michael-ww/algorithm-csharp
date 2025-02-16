@@ -1,4 +1,4 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
 // 9*10 Coordinates System
 // Start Point : (0,0)

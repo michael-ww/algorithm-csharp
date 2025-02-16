@@ -1,4 +1,4 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
 public class MinStack<T> where T : IComparable<T>
 {

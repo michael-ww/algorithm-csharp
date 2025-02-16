@@ -1,6 +1,6 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
-    public class LeetCode125
+public class LeetCode125
 {
     public bool IsPalindrome1(string s)
     {

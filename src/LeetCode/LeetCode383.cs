@@ -1,6 +1,6 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
-    public class LeetCode383
+public class LeetCode383
 {
     public bool CanConstruct(string ransomNote, string magazine)
     {

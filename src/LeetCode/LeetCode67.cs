@@ -1,4 +1,4 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
 using System.Globalization;
 

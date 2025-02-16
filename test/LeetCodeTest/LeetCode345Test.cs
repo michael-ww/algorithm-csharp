@@ -1,4 +1,4 @@
-namespace Algorithm.LeetCodeTest;
+namespace Belly.Algorithm.LeetCodeTest;
 
 public class LeetCode345Test
 {

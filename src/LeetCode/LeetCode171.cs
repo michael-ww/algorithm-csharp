@@ -1,6 +1,6 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
-    public class LeetCode171
+public class LeetCode171
 {
     public int TitleToNumber(string columnTitle)
     {

@@ -1,6 +1,6 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
-    public class LeetCode347
+public class LeetCode347
 {
     public int[] TopKFrequent(int[] nums, int k)
     {

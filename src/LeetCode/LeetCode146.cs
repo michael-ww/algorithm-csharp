@@ -1,4 +1,4 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
 public class LRUCache<K, V> where K : notnull
 {

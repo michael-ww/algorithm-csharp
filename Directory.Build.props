@@ -4,8 +4,8 @@
     <Company>Belly</Company>
     <Authors>Michael Ren</Authors>
     <ProjectName>Algorithm</ProjectName>
-    <AssemblyName>$(ProjectName).$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>$(ProjectName).$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName>$(Company).$(ProjectName).$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(Company).$(ProjectName).$(MSBuildProjectName)</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
     <LangVersion>12.0</LangVersion>
     <ProductVersion>1.0.0.0</ProductVersion>

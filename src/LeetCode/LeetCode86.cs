@@ -1,6 +1,6 @@
-namespace Algorithm.LeetCode;
+namespace Belly.Algorithm.LeetCode;
 
-    public class LeetCode86
+public class LeetCode86
 {
     public ListNode Partition1(ListNode head, int pivot)
     {
