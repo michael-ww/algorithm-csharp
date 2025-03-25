@@ -4,7 +4,6 @@ public class LeetCode137
 {
     public int SingleNumber1(int[] nums)
     {
-        ArgumentNullException.ThrowIfNull(nums);
         int answer = 0;
         for (int i = 0; i < 32; i++)
         {
