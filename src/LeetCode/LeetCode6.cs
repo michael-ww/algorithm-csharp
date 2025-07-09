@@ -8,7 +8,7 @@ public class LeetCode6
         {
             return s;
         }
-        List<StringBuilder> rows = new();
+        List<StringBuilder> rows = [];
         for (int k = 0; k < numRows; k++)
         {
             rows.Append(new StringBuilder());
@@ -20,7 +20,7 @@ public class LeetCode6
             if (i == 0 || i == numRows - 1) flag = -flag;
             i += flag;
         }
-        StringBuilder res = new StringBuilder();
+        StringBuilder res = new();
         foreach (StringBuilder row in rows)
         {
             res.Append(row);
