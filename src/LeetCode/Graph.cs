@@ -30,8 +30,8 @@ public class Node
         this.Value = value;
         this.In = 0;
         this.Out = 0;
-        this.Nexts = new();
-        this.Edges = new();
+        this.Nexts = [];
+        this.Edges = [];
     }
 }
 
