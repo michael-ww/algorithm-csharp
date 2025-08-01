@@ -6,48 +6,41 @@ public class LeetCode300
     {
         int[] dp = new int[nums.Length];
         Array.Fill(dp, 1);
-        int answer = 1;
-        for (int i = 0; i < nums.Length; i++)
+        for (int i = 1; i < nums.Length; i++)
         {
             for (int j = 0; j < i; j++)
             {
-                if (nums[j] < nums[i])
+                if (nums[i] > nums[j])
                 {
                     dp[i] = Math.Max(dp[i], dp[j] + 1);
                 }
             }
-            answer = Math.Max(answer, dp[i]);
         }
 
-        return answer;
+        return dp.Max();
     }
 
     public int LengthOfLIS2(int[] nums)
     {
-        int[] tails = new int[nums.Length];
-        int answer = 0;
+        List<int> tails = [];
         foreach (var num in nums)
         {
-            int i = 0, j = answer;
-            while (i < j)
+            int left = 0, right = tails.Count - 1;
+            while (left < right)
             {
-                int m = (i + j) / 2;
-                if (tails[m] < num)
+                int mid = (left + right) / 2;
+                if (tails[mid] < num)
                 {
-                    i = m + 1;
+                    left = mid + 1;
                 }
                 else
                 {
-                    j = m;
+                    right = mid;
                 }
             }
-            tails[i] = num;
-            if (answer == j)
-            {
-                answer++;
-            }
+            tails[left] = num;
         }
 
-        return answer;
+        return tails.Count;
     }
 }

@@ -4,7 +4,7 @@ public class LeetCode39
 {
     public IList<IList<int>> CombinationSum(int[] candidates, int target)
     {
-        IList<IList<int>> answer = new List<IList<int>>();
+        IList<IList<int>> answer = [];
         if (candidates == null || candidates.Length <= 0)
         {
             return answer;
@@ -17,7 +17,7 @@ public class LeetCode39
     {
         if (target == 0)
         {
-            answer.Add(new List<int>(combine));
+            answer.Add([.. combine]);
             return;
         }
         if (index >= candidates.Length)

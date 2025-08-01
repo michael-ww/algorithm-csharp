@@ -81,16 +81,16 @@ public class LeetCode572
         int[] next = new int[ss.Count];
         next[0] = -1;
         next[1] = 0;
-        int nextIndex = 2, comparingIndex = 0;
+        int nextIndex = 2, comparedIndex = 0;
         while (nextIndex < ss.Count)
         {
-            if (ss[nextIndex] == ss[comparingIndex])
+            if (ss[nextIndex] == ss[comparedIndex])
             {
-                next[nextIndex++] = ++comparingIndex;
+                next[nextIndex++] = ++comparedIndex;
             }
-            else if (comparingIndex > 0)
+            else if (comparedIndex > 0)
             {
-                comparingIndex = next[comparingIndex];
+                comparedIndex = next[comparedIndex];
             }
             else
             {

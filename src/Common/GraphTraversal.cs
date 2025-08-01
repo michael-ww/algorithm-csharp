@@ -1,4 +1,4 @@
-namespace Belly.Algorithm.LeetCode;
+namespace Belly.Algorithm.Common;
 
 public class GraphTraversal
 {

@@ -1,4 +1,4 @@
-namespace Belly.Algorithm.LeetCode;
+namespace Belly.Algorithm.Common;
 
 //Time Complexity: O(N)
 //Space Complexity: O(1)

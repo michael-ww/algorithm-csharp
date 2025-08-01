@@ -1,7 +1,7 @@
-namespace Belly.Algorithm.LeetCode;
+namespace Belly.Algorithm.Common;
 
 //Time Complexity : O(N) string matching
-public class KMP
+public class Kmp
 {
     public int GetIndexOf(string text, string pattern)
     {
@@ -9,7 +9,7 @@ public class KMP
         {
             return -1;
         }
-        int[] next = this.GetNextArray(pattern);
+        int[] next = this.GetNext(pattern);
         if (next == null)
         {
             return -1;
@@ -39,7 +39,7 @@ public class KMP
         return patternIndex == pattern.Length ? textIndex - patternIndex : -1;
     }
 
-    private int[] GetNextArray(string pattern)
+    private int[] GetNext(string pattern)
     {
         char[] charactors = pattern.ToCharArray();
         if (charactors.Length == 1)
