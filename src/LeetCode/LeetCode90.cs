@@ -16,21 +16,16 @@ public class LeetCode90
 
     private void DFS(int[] nums, int index, List<int> path, IList<IList<int>> answer)
     {
-        if (index >= nums.Length)
+        answer.Add([.. path]);
+        for (int i = index; i < nums.Length; i++)
         {
-            answer.Add([.. path]);
-        }
-        else
-        {
-            path.Add(nums[index]);
-            this.DFS(nums, index + 1, path, answer);
-            path.RemoveAt(path.Count - 1);
-            int next = index + 1;
-            while (next < nums.Length && nums[next] == nums[index])
+            if (i > index && nums[i] == nums[i - 1])
             {
-                next++;
+                continue;
             }
-            this.DFS(nums, next, path, answer);
+            path.Add(nums[i]);
+            this.DFS(nums, i + 1, path, answer);
+            path.RemoveAt(path.Count - 1);
         }
     }
 }

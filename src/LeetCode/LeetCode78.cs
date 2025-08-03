@@ -30,16 +30,12 @@ public class LeetCode78
 
     public void DFS(int[] nums, int index, IList<int> path, List<List<int>> answer)
     {
-        if (index >= nums.Length)
+        answer.Add([.. path]);
+        for (int i = index; i < nums.Length; i++)
         {
-            answer.Add([.. path]);
-        }
-        else
-        {
-            path.Add(nums[index]);
-            this.DFS(nums, index + 1, path, answer);
-            path.Remove(nums[index]);
-            this.DFS(nums, index + 1, path, answer);
+            path.Add(nums[i]);
+            this.DFS(nums, i + 1, path, answer);
+            path.RemoveAt(path.Count - 1);
         }
     }
 }
