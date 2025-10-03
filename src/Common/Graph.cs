@@ -1,16 +1,10 @@
 namespace Belly.Algorithm.Common;
 
-public class Graph
+public class Graph(Dictionary<int, Node> nodes, HashSet<Edge> edges)
 {
-    public Dictionary<int, Node> Nodes { get; }
+    public Dictionary<int, Node> Nodes { get; } = nodes;
 
-    public HashSet<Edge> Edges { get; }
-
-    public Graph(Dictionary<int, Node> nodes, HashSet<Edge> edges)
-    {
-        this.Nodes = nodes;
-        this.Edges = edges;
-    }
+    public HashSet<Edge> Edges { get; } = edges;
 }
 
 public class Node
@@ -35,20 +29,13 @@ public class Node
     }
 }
 
-public class Edge : IComparer<Edge>
+public class Edge(int weight, Node from, Node to) : IComparer<Edge>
 {
-    public int Weight { get; }
+    public int Weight { get; } = weight;
 
-    public Node From { get; }
+    public Node From { get; } = from;
 
-    public Node To { get; }
-
-    public Edge(int weight, Node from = null, Node to = null)
-    {
-        this.Weight = weight;
-        this.From = from;
-        this.To = to;
-    }
+    public Node To { get; } = to;
 
     public int Compare(Edge x, Edge y)
     {
