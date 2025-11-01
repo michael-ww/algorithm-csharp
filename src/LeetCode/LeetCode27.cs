@@ -8,16 +8,15 @@ public class LeetCode27
         {
             return 0;
         }
-
-        int iteratorIndex = 0, distinctIndex = -1;
-        while (iteratorIndex < nums.Length)
+        int slow = 0;
+        for (int fast = 0; fast < nums.Length; fast++)
         {
-            if (nums[iteratorIndex] != val)
+            if (nums[fast] != val)
             {
-                nums[++distinctIndex] = nums[iteratorIndex];
+                nums[slow++] = nums[fast];
             }
-            iteratorIndex++;
         }
-        return distinctIndex + 1;
+
+        return slow;
     }
 }

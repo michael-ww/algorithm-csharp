@@ -9,7 +9,7 @@ public class LeetCode76
             return string.Empty;
         }
 
-        int[] cnts = new int[256];
+        int[] cnts = new int[26];
         foreach (var item in target)
         {
             cnts[item]--;

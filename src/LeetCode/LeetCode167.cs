@@ -4,22 +4,20 @@ public class LeetCode167
 {
     public int[] TwoSum(int[] numbers, int target)
     {
-        ArgumentNullException.ThrowIfNull(numbers);
-        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(numbers.Length);
-        int leftIndex = 0, rightIndex = numbers.Length - 1;
-        while (leftIndex < rightIndex)
+        int left = 0, right = numbers.Length - 1;
+        while (left < right)
         {
-            if (numbers[leftIndex] + numbers[rightIndex] > target)
+            if (numbers[left] + numbers[right] > target)
             {
-                rightIndex--;
+                right--;
             }
-            else if (numbers[leftIndex] + numbers[rightIndex] < target)
+            else if (numbers[left] + numbers[right] < target)
             {
-                leftIndex++;
+                left++;
             }
             else
             {
-                return [leftIndex + 1, rightIndex + 1];
+                return [left + 1, right + 1];
             }
         }
 
